@@ -13,10 +13,12 @@
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="css/timeline.css" rel="stylesheet">
 
 </head>
 
@@ -26,7 +28,9 @@
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">hanseok0291</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+        type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
@@ -170,17 +174,17 @@
 
     </div>
   </section>
-    
+
   <!-- 개인연습물 -->
   <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="practice">
+  <section class="page-section bg-primary text-white portfolio" id="practice">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Practice</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Practice</h2>
 
       <!-- Icon Divider -->
-      <div class="divider-custom">
+      <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
@@ -270,6 +274,65 @@
     </div>
   </section>
 
+  <!-- timeline Section -->
+  <section class="page-section text-white mb-0" id="timeline">
+    <div class="container">
+
+      <!-- timeline Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary">경력</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- timeline Section Content -->
+      <section class="timeline text-secondary">
+        <ul>
+          <li>
+            <div>
+              <time>2016.04~</time> 
+              <p>매그넘빈트 개발그룹 사원(연구원) 팀원</p>
+              <p>신한금융투자증권 웹사이트 개편</p>
+              <p>역활:웹접근성,웹표준을 고려한 html 코딩 및 마크업</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>2017. 07~</time> 
+              <p>메타넷엠씨씨 컨텐츠UI팀 사원</p>
+              <p>사내 솔루션이용 html, css 코딩 및 마크업</p>
+              <p>역활:웹접근성,웹표준을 고려한 html 코딩 및 마크업</p>
+            </div>
+          </li>
+          <!-- 마지막 li 에는 span.arrow 추가 -->
+          <li>
+            <span class="arrow"></span>
+            <div>
+              <time>2018.05~</time> 
+              <p>(주)산업마케팅 디자인기획부 대리</p>
+              <p>자사 사이트 유지보수 및 신규사이트 오픈등</p>
+              <p>역활:웹접근성,웹표준을 고려한 html 코딩 및 마크업</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- timeline Section Button -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-secondary text-secondary" href="https://startbootstrap.com/themes/freelancer/">
+          <i class="fas fa-download mr-2"></i>
+          Free Download!
+        </a>
+      </div>
+
+    </div>
+  </section>
+
   <!-- About Section -->
   <section class="page-section bg-primary text-white mb-0" id="about">
     <div class="container">
@@ -289,10 +352,13 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+            complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
+            customization.</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and
+            add your email address to the contact form to make it fully functional!</p>
         </div>
       </div>
 
@@ -331,28 +397,32 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Name</label>
-                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                <input class="form-control" id="name" type="text" placeholder="Name" required="required"
+                  data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Email Address</label>
-                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" id="email" type="email" placeholder="Email Address" required="required"
+                  data-validation-required-message="Please enter your email address.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Phone Number</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required"
+                  data-validation-required-message="Please enter your phone number.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required"
+                  data-validation-required-message="Please enter a message."></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -425,7 +495,8 @@
   <!-- Portfolio Modals -->
 
   <!-- Portfolio Modal 01 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal01" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal01" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -449,11 +520,11 @@
                 </div>
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/responsive_1.jpg" alt="">
-                  
+
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">풀 페이지 형식의 반응형 프로모션 페이지 입니다.<br>퍼블리싱 100%</p>
                 <a href="https://hanseok0291.github.io/reponsive_cover_page/#1" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-times fa-fw"></i>보러가기
+                  <i class="fas fa-times fa-fw"></i>보러가기
                 </a>
                 <button class="btn btn-primary" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -468,7 +539,8 @@
   </div>
 
   <!-- Portfolio Modal 02 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal02" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal02" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -492,11 +564,11 @@
                 </div>
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/pc_land_2.jpg" alt="">
-                  
+
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">지도 API 사용하여 작업한 부동산 거래 사이트 페이지 입니다. <br>퍼블리싱 100%</p>
                 <a href="http://land.daara.co.kr/" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-times fa-fw"></i>보러가기
+                  <i class="fas fa-times fa-fw"></i>보러가기
                 </a>
                 <button class="btn btn-primary" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -554,8 +626,9 @@
     </div>
   </div>
 
-<!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -579,11 +652,11 @@
                 </div>
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/gif/animation_tab1.gif" alt="">
-                  
+
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5">탭 버튼에 애니메이션으로 움직을 효과를 주었습니다.</p>
                 <a href="https://hanseok0291.github.io/animation_tab/" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-times fa-fw"></i>보러가기
+                  <i class="fas fa-times fa-fw"></i>보러가기
                 </a>
                 <button class="btn btn-primary" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
@@ -598,7 +671,8 @@
   </div>
 
   <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal2Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -623,7 +697,9 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -637,7 +713,8 @@
   </div>
 
   <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal3Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -662,7 +739,9 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/circus.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -676,7 +755,8 @@
   </div>
 
   <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal4Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -701,7 +781,9 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/game.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -715,7 +797,8 @@
   </div>
 
   <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal5Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -740,7 +823,9 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/safe.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -754,7 +839,8 @@
   </div>
 
   <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal6Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -779,7 +865,9 @@
                 <!-- Portfolio Modal - Image -->
                 <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
@@ -805,6 +893,41 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  <script>
+    (function() {
+    
+      'use strict';
+    
+      // define variables
+      var items = document.querySelectorAll(".timeline li");
+    
+      // check if an element is in viewport
+      // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+    
+      // listen for events
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    
+    })();
+    </script>
 
 </body>
 
