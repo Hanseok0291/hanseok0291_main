@@ -16,15 +16,103 @@
   <title>hanseok0291 Portfolio</title>
 
   <!-- Custom fonts for this theme -->
+  <link rel="shortcut icon" href="/img/logo/favicon.png">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link href="css/timeline.css" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
+  <style>
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress-bar {
+  transition-duration: 1s;
+}
+.progress-left .progress-bar {
+  transition-delay: 0.5s;
+}
+.progress-right .progress-bar {
+  transition-delay: 1s;
+}
+#textAni {
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+del {
+  text-decoration: none;
+}
+  </style>
 </head>
 
 <body id="page-top">
@@ -45,6 +133,9 @@
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#practice">Practice</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
@@ -56,16 +147,42 @@
   </nav>
 
   <!-- Masthead -->
+  <section class="masthead page-section text-center" id="text">
+    <div class="container">
+      <!-- Portfolio Section Heading -->
+      <pre id="textAni">Hello <del>worl</del>HS world</pre>
+      <!-- /.row -->
+    </div>
+  </section>
+  
+  <script>
+var new_speed=100;
+
+$('#textAni').t({
+speed:80,
+typing:
+  function(e){
+   new_speed-=2;
+   e.s(new_speed);
+   $('#speed').text(Math.max(new_speed,10));
+   }
+});
+    </script>
+
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
       <div>
       <!-- <img class="masthead-avatar mb-5" src="img/portfolio/me.jpg" alt="" style="border-radius: 100%;"> -->
-      <img class="masthead-avatar mb-5" src="img/portfolio/me_white.jpg" alt="" style="border-radius: 100%;">
+      <img class="masthead-avatar mb-5" src="img/logo/logo.png" alt="">
+      <!-- <img class="masthead-avatar mb-5" src="img/portfolio/me_white.jpg" alt="" style="border-radius: 100%;"> -->
       </div>
 
       <!-- Masthead Heading -->
+      <!-- <pre id="demo_3">
+      </pre> -->
+
       <h1 class="masthead-heading text-uppercase mb-0">Portfolio</h1>
 
       <!-- Icon Divider -->
@@ -345,12 +462,13 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  
+  <!-- Skill Section -->
   <section class="page-section bg-primary text-white mb-0" id="about">
     <div class="container">
 
       <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+      <h2 class="page-section-heading text-center text-uppercase">Skill</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -362,7 +480,43 @@
       </div>
 
       <!-- About Section Content -->
-      <div class="row">
+      <div class="row text-secondary">
+        <!--  -->
+        <div class="ko-progress-circle" data-progress="0">
+            <div class="ko-circle">
+                <div class="full ko-progress-circle__slice">
+                    <div class="ko-progress-circle__fill"></div>
+                </div>
+                <div class="ko-progress-circle__slice">
+                    <div class="ko-progress-circle__fill"></div>
+                    <div class="ko-progress-circle__fill ko-progress-circle__bar"></div>
+                </div>
+            </div>
+            <div class="ko-progress-circle__overlay"></div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="page-section text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary">About</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row text-secondary">
         <div class="col-lg-4 ml-auto">
           <p class="lead">html, css, jQuery, javascript가 가능하며 PHP 작업도 가능합니다.</p>
         </div>
@@ -893,6 +1047,36 @@
       window.addEventListener("scroll", callbackFunc);
     
     })();
+
+    // 원형 퍼센트
+    $(function() {
+
+    $(".progress").each(function() {
+
+      var value = $(this).attr('data-value');
+      var left = $(this).find('.progress-left .progress-bar');
+      var right = $(this).find('.progress-right .progress-bar');
+
+      if (value > 0) {
+        if (value <= 50) {
+          right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+        } else {
+          right.css('transform', 'rotate(180deg)')
+          left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+        }
+      }
+    })
+
+    function percentageToDegrees(percentage) {
+      return percentage / 100 * 360
+    }
+    });
+    
+window.randomize = function() {
+	$('.ko-progress-circle').attr('data-progress', Math.floor(Math.random() * 100));
+}
+setTimeout(window.randomize, 200);
+$('.ko-progress-circle').click(window.randomize);
     </script>
 
 </body>
