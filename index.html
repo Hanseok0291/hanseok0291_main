@@ -10,7 +10,7 @@
   <meta property="og:url" content="https://hanseok0291.github.io/hanseok0291_main/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="hanseok0291 포트폴리오" />
-  <meta property="og:description" content="hanseok0291 포트폴리오" " />
+  <meta property="og:description" content="hanseok0291 포트폴리오" />
   <meta property="og:image" content="https://hanseok0291.github.io/hanseok0291_main/img/main.jpg" />
 
   <title>hanseok0291 Portfolio</title>
@@ -154,24 +154,9 @@ del {
           <pre id="textAni">Hello <del>worl</del>HS world</pre>
         </div>
       </div>
-      
       <!-- /.row -->
     </div>
   </section>
-  
-  <script>
-var new_speed=100;
-
-$('#textAni').t({
-speed:80,
-typing:
-  function(e){
-   new_speed-=2;
-   e.s(new_speed);
-   $('#speed').text(Math.max(new_speed,10));
-   }
-});
-    </script>
 
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
@@ -1081,7 +1066,20 @@ window.randomize = function() {
 }
 setTimeout(window.randomize, 200);
 $('.ko-progress-circle').click(window.randomize);
-    </script>
+
+// 텍스트 애니메이션
+var new_speed=100;
+
+$('#textAni').t({
+speed:80,
+typing:
+  function(e){
+   new_speed-=2;
+   e.s(new_speed);
+   $('#speed').text(Math.max(new_speed,10));
+   }
+});
+</script>
 
 </body>
 
