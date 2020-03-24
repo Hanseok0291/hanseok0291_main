@@ -23,6 +23,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Theme CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">  
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link href="css/timeline.css" rel="stylesheet">
   <link href="css/circle.css" rel="stylesheet">
@@ -104,9 +105,6 @@
 }
 .progress-right .progress-bar {
   transition-delay: 1s;
-}
-#textAni {
-  color: #2c3e50!important;
 }
 del {
   text-decoration: none;
@@ -225,6 +223,18 @@ del {
   background-image: url('img/ico/sass.png');
 }
 
+/* 메인 bg 영역 */
+.main-section {
+  background-image: url('img/bg-main.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#textAni {
+  color: #fff!important;
+}
+/* 메인 bg 영역 */
+
 </style>
 </head>
 
@@ -234,7 +244,7 @@ del {
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">hanseok0291</a>
-      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary rounded"
         type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -260,7 +270,7 @@ del {
   </nav>
 
   <!-- Masthead -->
-  <section class="masthead page-section text-center" id="text">
+  <section class="masthead page-section text-center main-section" id="text">
     <div class="container">
       <!-- Portfolio Section Heading -->
       <div class="page-section">
@@ -272,7 +282,7 @@ del {
     </div>
   </section>
 
-  <header class="masthead bg-primary text-white text-center">
+  <header class="masthead text-secondary text-center">
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
@@ -289,7 +299,7 @@ del {
       <h1 class="masthead-heading text-uppercase mb-0">Portfolio</h1>
 
       <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
+      <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
@@ -304,11 +314,11 @@ del {
   </header>
 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
+  <section class="page-section portfolio bg-primary" id="portfolio">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <h2 class="page-section-heading text-center text-uppercase mb-0">Portfolio</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -406,14 +416,14 @@ del {
 
   <!-- 개인연습물 -->
   <!-- Portfolio Section -->
-  <section class="page-section bg-primary text-white portfolio" id="practice">
+  <section class="page-section portfolio" id="practice">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Practice</h2>
+      <h2 class="page-section-heading text-center text-uppercase mb-0">Practice</h2>
 
       <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
+      <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
@@ -566,7 +576,7 @@ del {
   </section>
   
   <!-- Skill Section -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
+  <section class="page-section bg-primary mb-0" id="skill">
     <div class="container">
       <div class="row">
         <div class="col-6 col-md-4">
