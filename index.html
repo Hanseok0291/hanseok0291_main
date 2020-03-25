@@ -28,6 +28,10 @@
   <link href="css/timeline.css" rel="stylesheet">
   <link href="css/circle.css" rel="stylesheet">
   <style>
+  #mainNav {
+  width: 100%;    
+  max-width: 100%;
+  }
 .progress {
   width: 150px;
   height: 150px;
@@ -232,6 +236,13 @@ del {
 }
 #textAni {
   color: #fff!important;
+}
+#skill {
+  display: none;
+}
+.timeline ul li {
+}
+.timeline ul li.in-view {
 }
 /* 메인 bg 영역 */
 
@@ -520,7 +531,7 @@ del {
   </section>
 
   <!-- timeline Section -->
-  <section class="page-section text-white mb-0" id="career">
+  <section class="page-section text-white mb-0 bg-primary" id="career">
     <div class="container" id="timeline">
 
       <!-- timeline Section Heading -->
@@ -538,7 +549,7 @@ del {
       <!-- timeline Section Content -->
       <section class="timeline text-secondary">
         <ul>
-          <li>
+          <li class="in-view">
             <div>
               <time>2016.04~</time> 
               <p>매그넘빈트 개발그룹 사원(연구원) 팀원</p>
@@ -546,7 +557,7 @@ del {
               <p>역활: 웹접근성,웹표준을 고려한 html 코딩 및 마크업</p>
             </div>
           </li>
-          <li>
+          <li class="in-view">
             <div>
               <time>2017. 07~</time> 
               <p>메타넷엠씨씨 컨텐츠UI팀 사원</p>
@@ -555,7 +566,7 @@ del {
             </div>
           </li>
           <!-- 마지막 li 에는 span.arrow 추가 -->
-          <li>
+          <li class="in-view">
             <span class="arrow"></span>
             <div>
               <time>2018.05~</time> 
