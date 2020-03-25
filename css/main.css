@@ -200,7 +200,7 @@
   
   /* 메인 bg 영역 */
   .main-section {
-	background-image: url('/img/bg-main.jpg');
+	background-image: url('../img/bg-main.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
