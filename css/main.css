@@ -163,39 +163,39 @@
   }
   .progress .bg.html::after {
 	content: '';
-	background-image: url('/img/ico/html.png');
+	background-image: url('../img/ico/html.png');
   }
   .progress .bg.css::after {
 	content: '';
-	background-image: url('/img/ico/css.png');
+	background-image: url('../img/ico/css.png');
   }
   .progress .bg.js::after {
 	content: '';
-	background-image: url('/img/ico/js.png');
+	background-image: url('../img/ico/js.png');
   }
   .progress .bg.bootstrap::after {
 	content: '';
-	background-image: url('/img/ico/bootstrap.png');
+	background-image: url('../img/ico/bootstrap.png');
   }
   .progress .bg.php::after {
 	content: '';
-	background-image: url('/img/ico/php.png');
+	background-image: url('../img/ico/php.png');
   }
   .progress .bg.photoshop::after {
 	content: '';
-	background-image: url('/img/ico/photoshop.png');
+	background-image: url('../img/ico/photoshop.png');
   }
   .progress .bg.vue::after {
 	content: '';
-	background-image: url('/img/ico/vue.png');
+	background-image: url('../img/ico/vue.png');
   }
   .progress .bg.jquery::after {
 	content: '';
-	background-image: url('/img/ico/jquery.png');
+	background-image: url('../img/ico/jquery.png');
   }
   .progress .bg.sass::after {
 	content: '';
-	background-image: url('/img/ico/sass.png');
+	background-image: url('../img/ico/sass.png');
   }
   
   /* 메인 bg 영역 */
