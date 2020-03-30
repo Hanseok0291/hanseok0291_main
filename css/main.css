@@ -209,3 +209,13 @@
 	color: #fff!important;
   }
   /* 메인 bg 영역 */
+
+  .portfolio-item .img-fluid {
+	  max-height: 200px;
+  }
+  .portfolio .portfolio-item {
+	  justify-content: center;
+  }
+  .modal-content .img-fluid {
+	  max-height: 500px;
+  }
